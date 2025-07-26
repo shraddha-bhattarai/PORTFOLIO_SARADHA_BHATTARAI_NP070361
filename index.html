@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shraddha Bhattarai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f7f9fc);
+      color: #1e1e2f;
+      font-size: 16px;
+      line-height: 1.75;
+      padding-bottom: 60px;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #1e1e2f;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #3ac4ff;
+      color: white;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1e1e2f;
+      border-left: 5px solid #3ac4ff;
+      padding-left: 15px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #3b3b4f;
+    }
+
+    ul.skills li,
+    ul.education-list li {
+      background-color: #eef4fb;
+      padding: 15px 20px;
+      margin-bottom: 12px;
+      border-left: 4px solid #3ac4ff;
+      border-radius: 10px;
+      font-weight: 500;
+      color: #2a2a3a;
+      transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    ul.skills li:hover,
+    ul.education-list li:hover {
+      background-color: #dceeff;
+      transform: translateX(5px);
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    /* Unique Profile Photo Styling */
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      cursor: pointer;
+      border: 6px solid #ffffff;
+      box-shadow: 
+        0 0 0 4px #3ac4ff, 
+        0 12px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-photo:hover,
+    .profile-photo:focus {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 
+        0 0 0 6px #3ac4ff, 
+        0 16px 32px rgba(0, 0, 0, 0.2);
+      outline: none;
+    }
+
+    .about-content > div {
+      flex: 1;
+      min-width: 260px;
+      color: #3b3b4f;
+    }
+
+    #contact a {
+      color: #0077cc;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #023e8a;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #5e6b75;
+      font-size: 0.95rem;
+      border-top: 1px solid #d4dce1;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      header h1 {
+        font-size: 2.3rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Shraddha Bhattarai</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="WhatsApp Image 2025-07-18 at 12.41.40_4c877acb.jpg" alt="Photo of Shraddha Bhattarai" class="profile-photo" />
+        <div>
+          <p>
+            Hi, I’m Shraddha! I’m currently studying for my Bachelor’s in Information Technology. I enjoy building websites and learning about cybersecurity. I’m also interested in content creation and have experience making various types of content. I’m a creative thinker who pays attention to detail and likes working with others. I’m always eager to learn new things and take on challenges.
+          </p>
+          <ul class="skills">
+            <li>Good at HTML, CSS, and Python programming</li>
+            <li>Basic understanding of cybersecurity</li>
+            <li>Experience with databases and computer networks</li>
+            <li>Strong team player with good communication skills</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>Techspire College</strong> — Bachelor of Science in Information Technology (Hons) <br />
+          <em>2024 – 2028</em>
+        </li>
+        <li>
+          <strong>Shree Shiva Secondary School</strong> — Higher Secondary (+2 Science) <br />
+          <em>GPA: 3.35</em>
+        </li>
+        <li>
+          <strong>Gyanodaya Secondary School</strong> — Secondary Education (SEE) <br />
+          GPA: 3.35
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shraddha@example.com">shraddhabhattarai48@gmail.com</a></p>
+      <p>Phone: +977-9741897622</p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/shraddha-bhattarai-01a93a333" target="_blank" rel="noopener noreferrer">linkedin.com/in/shraddha</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shraddha Bhattarai. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
